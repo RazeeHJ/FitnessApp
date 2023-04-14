@@ -25,7 +25,7 @@
 		A07FEE0529E8B0B400BE182D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A07FEDF429E8B0B400BE182D /* Colors.xcassets */; };
 		A07FEE0629E8B0B400BE182D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A07FEDF529E8B0B400BE182D /* Assets.xcassets */; };
 		A07FEE0729E8B0B400BE182D /* HomeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07FEDF929E8B0B400BE182D /* HomeScene.swift */; };
-		A07FEE1A29E8B73400BE182D /* DesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = A07FEE1929E8B73400BE182D /* DesignSystem */; };
+		A07FEE2629E94BBB00BE182D /* DesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = A07FEE2529E94BBB00BE182D /* DesignSystem */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +59,6 @@
 		A07FEDF429E8B0B400BE182D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		A07FEDF529E8B0B400BE182D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A07FEDF929E8B0B400BE182D /* HomeScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScene.swift; sourceTree = "<group>"; };
-		A07FEE1829E8B72800BE182D /* DesignSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = DesignSystem; path = ../DesignSystem; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A07FEE1A29E8B73400BE182D /* DesignSystem in Frameworks */,
+				A07FEE2629E94BBB00BE182D /* DesignSystem in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +84,6 @@
 		A07FEDBA29E8B0A000BE182D = {
 			isa = PBXGroup;
 			children = (
-				A07FEE1329E8B69800BE182D /* Packages */,
 				A07FEDC629E8B0A000BE182D /* FitnessFeed */,
 				A07FEDD229E8B0A000BE182D /* FitnessFeedTests */,
 				A07FEDC529E8B0A000BE182D /* Products */,
@@ -245,14 +243,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A07FEE1329E8B69800BE182D /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				A07FEE1829E8B72800BE182D /* DesignSystem */,
-			);
-			name = Packages;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -282,7 +272,7 @@
 			);
 			name = FitnessFeed;
 			packageProductDependencies = (
-				A07FEE1929E8B73400BE182D /* DesignSystem */,
+				A07FEE2529E94BBB00BE182D /* DesignSystem */,
 			);
 			productName = FitnessFeed;
 			productReference = A07FEDC429E8B0A000BE182D /* FitnessFeed.framework */;
@@ -333,6 +323,9 @@
 				Base,
 			);
 			mainGroup = A07FEDBA29E8B0A000BE182D;
+			packageReferences = (
+				A07FEE2429E94BBB00BE182D /* XCRemoteSwiftPackageReference "DesignSystem" */,
+			);
 			productRefGroup = A07FEDC529E8B0A000BE182D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -671,9 +664,21 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		A07FEE2429E94BBB00BE182D /* XCRemoteSwiftPackageReference "DesignSystem" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:RazeeHJ/DesignSystem.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		A07FEE1929E8B73400BE182D /* DesignSystem */ = {
+		A07FEE2529E94BBB00BE182D /* DesignSystem */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = A07FEE2429E94BBB00BE182D /* XCRemoteSwiftPackageReference "DesignSystem" */;
 			productName = DesignSystem;
 		};
 /* End XCSwiftPackageProductDependency section */

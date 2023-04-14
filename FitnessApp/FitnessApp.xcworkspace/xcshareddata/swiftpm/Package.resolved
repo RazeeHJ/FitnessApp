@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "designsystem",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:RazeeHJ/DesignSystem.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "fb578e8658b7319dace7f004a11e8d3b8e6a48be"
+      }
+    }
+  ],
+  "version" : 2
+}
