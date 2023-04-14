@@ -39,9 +39,9 @@ struct SecondaryRectangularCard: View {
                 .resizable()
                 .renderingMode(.template)
                 .dsForegroundColor(model.foregroundColor)
-                .dsFrameOfSize(.large)
+                .dsFrameOfSize(.medium)
         }
-        .dsFrameOfHeight(.large)
+        .dsFrameOfHeight(.small)
         .dsPadding(.medium)
         .dsBackgroundColor(model.backgroundColor)
         .dsCornerRadius(.small)
@@ -51,9 +51,9 @@ struct SecondaryRectangularCard: View {
 extension SecondaryRectangularCard.Model {
     static func fixture(
         title: String = "7642",
-        image: Image = .init("icon_walk"),
+        image: Image = .init("icon_walk", bundle: Bundle(identifier: "com.rhj.FitnessFeed")),
         description: String = "steps",
-        foregroundColor: DS.Color = .neautralWhiteMain,
+        foregroundColor: DS.Color = .neautralWhiteDark,
         backgroundColor: DS.Color = .secondaryMain
     ) -> Self {
         .init(

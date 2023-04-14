@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import DesignSystem
 
 struct Tabbar: View {
     let tabProviders: [TabViewProvider]
@@ -24,6 +25,7 @@ struct Tabbar: View {
                     )
             }
         }
+        .dsAccentColor(.tertiaryDark)
     }
 }
 

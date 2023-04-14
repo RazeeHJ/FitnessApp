@@ -24,24 +24,24 @@ struct PrimarySquareCard: View {
     }
     
     var content: some View {
-        VStack(alignment: .leading) {
+        VStack(alignment: .leading, spacing: .dsSpacing(.medium)) {
             HStack(spacing: .dsSpacing(.medium)) {
-         
-                BodyLarge(model: .fixture(title: model.title, foregroundColor: model.foregroundColor))
-                        .multilineTextAlignment(.leading)
-                
-                Spacer()
-                
                 model.image
                     .resizable()
                     .renderingMode(.template)
                     .dsForegroundColor(model.foregroundColor)
-                    .dsFrameOfSize(.xLarge)
+                    .dsFrameOfSize(.medium)
+                         
+                Spacer()
+                
+                Title(model: .fixture(title: model.description, foregroundColor: model.foregroundColor))
             }
-            
-            HeadlineLarge(model: .fixture(title: model.description, foregroundColor: model.foregroundColor))
+
+            BodySmall(model: .fixture(title: model.title, foregroundColor: model.foregroundColor))
+                .multilineTextAlignment(.leading)
         }
-        .dsPadding(.small)
+        .dsFrameOfHeight(.xxLarge)
+        .dsPadding(.xSmall)
         .dsBackgroundColor(model.backgroundColor)
         .dsCornerRadius(.small)
     }
@@ -49,8 +49,8 @@ struct PrimarySquareCard: View {
 
 extension PrimarySquareCard.Model {
     static func fixtureCompletedExercises(
-        title: String = "Completed exercises",
-        image: Image = .init("icon_watch"),
+        title: String = "Done Workout",
+        image: Image = .init("icon_weight_lifting", bundle: Bundle(identifier: "com.rhj.FitnessFeed")),
         description: String = "2/4",
         foregroundColor: DS.Color = .secondaryDark,
         backgroundColor: DS.Color = .primaryMain
@@ -66,7 +66,7 @@ extension PrimarySquareCard.Model {
     
     static func fixtureBurnedCalories(
         title: String = "Burned kcal",
-        image: Image = .init(""),
+        image: Image = .init("icon_fire", bundle: Bundle(identifier: "com.rhj.FitnessFeed")),
         description: String = "346",
         foregroundColor: DS.Color = .secondaryDark,
         backgroundColor: DS.Color = .primaryMain

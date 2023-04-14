@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A03EC4CB29E8A75500E77BC8 /* FitnessAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03EC4CA29E8A75500E77BC8 /* FitnessAppApp.swift */; };
+		A03EC4CB29E8A75500E77BC8 /* FitnessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03EC4CA29E8A75500E77BC8 /* FitnessApp.swift */; };
 		A03EC4CD29E8A75500E77BC8 /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03EC4CC29E8A75500E77BC8 /* MainScene.swift */; };
 		A03EC4CF29E8A75500E77BC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A03EC4CE29E8A75500E77BC8 /* Assets.xcassets */; };
 		A03EC4D329E8A75500E77BC8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A03EC4D229E8A75500E77BC8 /* Preview Assets.xcassets */; };
 		A041226029E8A965009FE894 /* Tabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A041225D29E8A965009FE894 /* Tabbar.swift */; };
 		A041226129E8A965009FE894 /* TabbarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A041225E29E8A965009FE894 /* TabbarItem.swift */; };
 		A041226229E8A965009FE894 /* TabViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A041225F29E8A965009FE894 /* TabViewProvider.swift */; };
+		A048319C29E9B0DC00DC61EC /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A048319B29E9B0DC00DC61EC /* Colors.xcassets */; };
 		A07FEE0E29E8B1B800BE182D /* FitnessFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A07FEE0D29E8B1B800BE182D /* FitnessFeed.framework */; };
 		A07FEE0F29E8B1B800BE182D /* FitnessFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A07FEE0D29E8B1B800BE182D /* FitnessFeed.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -34,7 +35,7 @@
 
 /* Begin PBXFileReference section */
 		A03EC4C729E8A75500E77BC8 /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A03EC4CA29E8A75500E77BC8 /* FitnessAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessAppApp.swift; sourceTree = "<group>"; };
+		A03EC4CA29E8A75500E77BC8 /* FitnessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessApp.swift; sourceTree = "<group>"; };
 		A03EC4CC29E8A75500E77BC8 /* MainScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScene.swift; sourceTree = "<group>"; };
 		A03EC4CE29E8A75500E77BC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A03EC4D029E8A75500E77BC8 /* FitnessApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FitnessApp.entitlements; sourceTree = "<group>"; };
@@ -43,6 +44,7 @@
 		A041225E29E8A965009FE894 /* TabbarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarItem.swift; sourceTree = "<group>"; };
 		A041225F29E8A965009FE894 /* TabViewProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewProvider.swift; sourceTree = "<group>"; };
 		A041226629E8A9D9009FE894 /* FitnessFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FitnessFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A048319B29E9B0DC00DC61EC /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		A07FEDAA29E8AFB800BE182D /* Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A07FEDAD29E8AFF500BE182D /* FitnessFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FitnessFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A07FEDB129E8B04F00BE182D /* FitnessFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FitnessFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,11 +85,11 @@
 		A03EC4C929E8A75500E77BC8 /* FitnessApp */ = {
 			isa = PBXGroup;
 			children = (
+				A048319A29E9B09000DC61EC /* Resources */,
 				A07FEDB529E8B06A00BE182D /* Info.plist */,
 				A041226329E8A98D009FE894 /* Features */,
 				A041225A29E8A965009FE894 /* Modules */,
-				A03EC4CA29E8A75500E77BC8 /* FitnessAppApp.swift */,
-				A03EC4CE29E8A75500E77BC8 /* Assets.xcassets */,
+				A03EC4CA29E8A75500E77BC8 /* FitnessApp.swift */,
 				A03EC4D029E8A75500E77BC8 /* FitnessApp.entitlements */,
 				A03EC4D129E8A75500E77BC8 /* Preview Content */,
 			);
@@ -157,6 +159,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A048319A29E9B09000DC61EC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A03EC4CE29E8A75500E77BC8 /* Assets.xcassets */,
+				A048319B29E9B0DC00DC61EC /* Colors.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -216,6 +227,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A048319C29E9B0DC00DC61EC /* Colors.xcassets in Resources */,
 				A03EC4D329E8A75500E77BC8 /* Preview Assets.xcassets in Resources */,
 				A03EC4CF29E8A75500E77BC8 /* Assets.xcassets in Resources */,
 			);
@@ -231,7 +243,7 @@
 				A041226029E8A965009FE894 /* Tabbar.swift in Sources */,
 				A03EC4CD29E8A75500E77BC8 /* MainScene.swift in Sources */,
 				A041226129E8A965009FE894 /* TabbarItem.swift in Sources */,
-				A03EC4CB29E8A75500E77BC8 /* FitnessAppApp.swift in Sources */,
+				A03EC4CB29E8A75500E77BC8 /* FitnessApp.swift in Sources */,
 				A041226229E8A965009FE894 /* TabViewProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

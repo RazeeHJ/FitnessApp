@@ -53,7 +53,6 @@ struct ImageSquareCard: View {
                 .aspectRatio(contentMode: .fill)
         }
         .dsCornerRadius(.small)
-        .dsPadding(.small)
     }
     
     var circleImageView: some View {
@@ -85,15 +84,37 @@ struct ImageSquareCard: View {
 }
 
 extension ImageSquareCard.Model {
-    static func fixture(
-        title: String = "Full body workout",
-        calories: String = "264 kcal",
-        time: String = "25 min",
+    static func fixtureKickboxing(
+        title: String = "Kickboxing",
+        calories: String = "325 kcal",
+        time: String = "30 min",
         bookmarkImage: Image = .init(systemName: "bookmark"),
         calorieImage: Image = .init(systemName: "flame"),
         timerImage: Image = .init(systemName: "timer"),
         foregroundColor: DS.Color = .neautralWhiteMain,
-        backgroundImage: Image = .init("image_women_kickboxing")
+        backgroundImage: Image = .init("image_kickboxing", bundle: Bundle(identifier: "com.rhj.FitnessFeed"))
+    ) -> Self {
+        .init(
+            title: title,
+            calories: calories,
+            time: time,
+            bookmarkImage: bookmarkImage,
+            calorieImage: calorieImage,
+            timerImage: timerImage,
+            foregroundColor: foregroundColor,
+            backgroundImage: backgroundImage
+        )
+    }
+    
+    static func fixtureFullbodyWorkout(
+        title: String = "Fullbody Workout",
+        calories: String = "325 kcal",
+        time: String = "30 min",
+        bookmarkImage: Image = .init(systemName: "bookmark"),
+        calorieImage: Image = .init(systemName: "flame"),
+        timerImage: Image = .init(systemName: "timer"),
+        foregroundColor: DS.Color = .neautralWhiteMain,
+        backgroundImage: Image = .init("image_fullbody_workout", bundle: Bundle(identifier: "com.rhj.FitnessFeed"))
     ) -> Self {
         .init(
             title: title,
@@ -111,10 +132,10 @@ extension ImageSquareCard.Model {
 #if DEBUG
 struct ImageSquareCard_Previews: PreviewProvider {
     static var previews: some View {
-        ImageSquareCard(model: .fixture())
+        ImageSquareCard(model: .fixtureKickboxing())
             .preferredColorScheme(.light)
         
-        ImageSquareCard(model: .fixture())
+        ImageSquareCard(model: .fixtureKickboxing())
             .preferredColorScheme(.dark)
     }
 }

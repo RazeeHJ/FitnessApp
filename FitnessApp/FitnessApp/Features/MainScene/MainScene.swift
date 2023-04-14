@@ -21,11 +21,11 @@ struct MainScene: View {
 var homeTabProvider: TabViewProvider {
     return .init(imageName: "house.fill", tabName: "HOME") {
         AnyView(HomeScene())
-//        let navigationView = NavigationView {
-//            AnyView(HomeScene())
-//        }
-//
-//        return AnyView(navigationView)
+        let navigationView = NavigationView {
+            AnyView(HomeScene())
+        }
+
+        return AnyView(navigationView)
     }
 }
 

@@ -32,6 +32,26 @@ extension BodyLarge.Model {
             foregroundColor: foregroundColor
         )
     }
+    
+    static func fixtureTodaysActivity(
+        title: String = "TODAY'S ACTIVITY",
+        foregroundColor: DS.Color = .secondaryDark
+    ) -> Self {
+        .init(
+            title: title,
+            foregroundColor: foregroundColor
+        )
+    }
+    
+    static func fixtureWelcomeMessage(
+        title: String = "Welcome Back Razee!",
+        foregroundColor: DS.Color = .secondaryDark
+    ) -> Self {
+        .init(
+            title: title,
+            foregroundColor: foregroundColor
+        )
+    }
 }
 
 #if DEBUG

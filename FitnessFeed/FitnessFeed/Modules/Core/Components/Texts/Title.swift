@@ -1,14 +1,14 @@
 //
-//  BodySmall.swift
+//  Title.swift
 //  FitnessFeed
 //
-//  Created by Razee Hussein-Jamal on 2023-04-02.
+//  Created by Razee Hussein-Jamal on 2023-04-14.
 //
 
 import SwiftUI
 import DesignSystem
 
-struct BodySmall: View {
+struct Title: View {
     struct Model {
         let title: String
         let foregroundColor: DS.Color
@@ -18,11 +18,11 @@ struct BodySmall: View {
     
     var body: some View {
         Text(model.title)
-            .dsTypography(.body, color: model.foregroundColor)
+            .dsTypography(.title, color: model.foregroundColor)
     }
 }
 
-extension BodySmall.Model {
+extension Title.Model {
     static func fixture(
         title: String = "Hello, World!",
         foregroundColor: DS.Color = .primaryMain
@@ -35,12 +35,12 @@ extension BodySmall.Model {
 }
 
 #if DEBUG
-struct BodySmall_Previews: PreviewProvider {
+struct Title_Previews: PreviewProvider {
     static var previews: some View {
-        BodySmall(model: .fixture())
+        Title(model: .fixture())
             .preferredColorScheme(.light)
         
-        BodySmall(model: .fixture())
+        Title(model: .fixture())
             .preferredColorScheme(.dark)
     }
 }

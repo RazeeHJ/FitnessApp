@@ -35,7 +35,7 @@ extension HeadlineSmall.Model {
 }
 
 #if DEBUG
-struct HHeadlineSmall_Previews: PreviewProvider {
+struct HeadlineSmall_Previews: PreviewProvider {
     static var previews: some View {
         HeadlineSmall(model: .fixture())
             .preferredColorScheme(.light)
