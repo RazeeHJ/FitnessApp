@@ -79,6 +79,22 @@ extension PrimarySquareCard.Model {
             backgroundColor: backgroundColor
         )
     }
+    
+    static func fixtureMotivation(
+        title: String = "Visits to the gym this week",
+        image: Image = .init("icon_dumbbell", bundle: Bundle(identifier: "com.rhj.FitnessFeed")),
+        description: String = "3/5",
+        foregroundColor: DS.Color = .neautralWhiteDark,
+        backgroundColor: DS.Color = .tertiaryDark
+    ) -> Self {
+        .init(
+            title: title,
+            image: image,
+            description: description,
+            foregroundColor: foregroundColor,
+            backgroundColor: backgroundColor
+        )
+    }
 }
 
 #if DEBUG

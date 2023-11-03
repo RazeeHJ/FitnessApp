@@ -44,7 +44,7 @@ extension BodyLarge.Model {
     }
     
     static func fixtureWelcomeMessage(
-        title: String = "Welcome Back Razee!",
+        title: String = "WELCOME BACK Razee!",
         foregroundColor: DS.Color = .secondaryDark
     ) -> Self {
         .init(

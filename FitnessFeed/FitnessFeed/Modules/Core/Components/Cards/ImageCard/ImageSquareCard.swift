@@ -59,7 +59,7 @@ struct ImageSquareCard: View {
         ZStack {
             Circle()
                 .dsOpacing(.xSmall)
-                .dsFrameOfSize(.xLarge)
+                .dsFrameOfSize(.large)
             
             model.bookmarkImage
                 .renderingMode(.template)

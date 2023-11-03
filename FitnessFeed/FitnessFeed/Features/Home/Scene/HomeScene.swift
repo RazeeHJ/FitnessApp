@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import DesignSystem
 
 public struct HomeScene: View {
     public init() {}
@@ -51,6 +52,8 @@ public struct HomeScene: View {
                     ImageSquareCard(model: .fixtureFullbodyWorkout())
                 }
             }
+            
+            PrimarySquareCard(model: .fixtureMotivation())
         }
     }
 }
